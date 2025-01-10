@@ -2,11 +2,17 @@
     padding: 1rem 4rem 0.5rem;
     display: flex;
     gap: 1rem;
-    border-bottom: 1px solid #00095b;
 }
 
 .header .home-icon {
     font-size: 2.4rem;
     color: #00095b;
     font-family: "Great Vibes", serif;
+}
+
+.footer {
+    padding: 1rem 4rem 0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
 }
