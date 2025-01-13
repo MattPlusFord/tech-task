@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "scripts": {
     "start": "vite serve --port 10000 --strictPort",
-    "test": "cypress run --component",
+    "test": "cypress run --component --headless",
+    "cypress:unit": "cypress open --component",
+    "cypress:e2e": "cypress open --e2e",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
