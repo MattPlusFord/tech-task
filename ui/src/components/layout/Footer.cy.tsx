@@ -7,7 +7,7 @@ describe("Footer", () => {
         });
 
         it("should show the copyright notification", () => {
-            cy.get("p").contains("©Ford Credit Europe 2025");
+            cy.get("p").contains("©Fawd Credit Europe 2025");
         });
     });
 });

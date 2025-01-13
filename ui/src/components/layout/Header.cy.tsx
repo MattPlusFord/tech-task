@@ -7,7 +7,7 @@ describe("Header", () => {
         });
 
         it("should show the company logo", () => {
-            cy.get("a").contains("Ford Credit");
+            cy.get("a").contains("Fawd Credit");
         });
     });
 });

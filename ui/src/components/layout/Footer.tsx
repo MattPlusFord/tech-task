@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <div className="footer">
-            <p>©Ford Credit Europe 2025</p>
+            <p>©Fawd Credit Europe 2025</p>
         </div>
     )
 }
