@@ -1,4 +1,4 @@
-import {HeroCard} from "../components/cards/HeroCard.tsx";
+import HeroCard from "../components/cards/HeroCard.tsx";
 import './home.css';
 
 export const HomePage = () => {

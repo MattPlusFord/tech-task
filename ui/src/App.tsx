@@ -1,8 +1,8 @@
-import Header from "./components/layout/Header.tsx";
+import Header from "./components/layout/Header";
 import './components/layout/layout.css';
 import './App.css';
-import HomePage from "./pages/Home.tsx";
-import Footer from "./components/layout/Footer.tsx";
+import HomePage from "./pages/Home";
+import Footer from "./components/layout/Footer";
 
 export const App = () => {
     return (

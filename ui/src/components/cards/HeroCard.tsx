@@ -13,3 +13,5 @@ export const HeroCard = ({userName}: HeroCardProps) => {
         </Card>
     );
 }
+
+export default HeroCard;
