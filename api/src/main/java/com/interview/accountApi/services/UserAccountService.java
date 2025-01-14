@@ -5,8 +5,6 @@ import com.interview.accountApi.repositories.UserAccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class UserAccountService {
     private final UserAccountRepository userAccountRepository;
