@@ -3,13 +3,16 @@ import './components/layout/layout.css';
 import './App.css';
 import HomePage from "./pages/Home";
 import Footer from "./components/layout/Footer";
+import {BrowserRouter} from "react-router-dom";
 
 export const App = () => {
     return (
         <>
             <Header />
             <main className="main">
-                <HomePage />
+                <BrowserRouter>
+                    <HomePage />
+                </BrowserRouter>
             </main>
             <Footer />
         </>
