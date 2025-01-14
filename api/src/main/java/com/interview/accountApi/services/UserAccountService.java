@@ -9,11 +9,11 @@ import java.util.List;
 
 @Service
 public class UserAccountService {
-    @Autowired
-    private UserAccountRepository userAccountRepository;
+    private final UserAccountRepository userAccountRepository;
 
-    public List<UserAccount> findAll() {
-        return userAccountRepository.findAll();
+    @Autowired
+    public UserAccountService(UserAccountRepository userAccountRepository) {
+        this.userAccountRepository = userAccountRepository;
     }
 
     public UserAccount findById(Long id) {
