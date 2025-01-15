@@ -4,12 +4,9 @@ import {useEffect, useState} from "react";
 import UserClient from "../api/userClient.ts";
 import Card from "../components/cards/Card.tsx";
 import {useSearchParams} from "react-router-dom";
+import {User} from "../types/users.ts";
+import {AccountList} from "../components/accountList/AccountList.tsx";
 
-type User = {
-    id: string;
-    name: string;
-    email: string;
-}
 
 export const HomePage = () => {
     const [user, setUser] = useState<undefined|User>();
@@ -30,10 +27,11 @@ export const HomePage = () => {
         }
     }, [user]);
 
-    if (user) {
+    if (user && userId) {
         return (
             <div className="home">
                 <HeroCard userName={user?.name ? user.name : ""} />
+                <AccountList userId={userId} />
             </div>
         );
     } else if (!userId || userLoadError) {
