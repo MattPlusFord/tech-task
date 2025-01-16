@@ -9,7 +9,7 @@ export const App = () => {
     return (
         <>
             <Header />
-            <main className="main">
+            <main data-testid={'main-wrapper'} className="main">
                 <BrowserRouter>
                     <HomePage />
                 </BrowserRouter>
