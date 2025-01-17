@@ -19,6 +19,7 @@ public class AccountApiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/users/*").allowedOrigins("http://localhost:10000");
+				registry.addMapping("/users/*/finance").allowedOrigins("http://localhost:10000");
 			}
 		};
 	}
